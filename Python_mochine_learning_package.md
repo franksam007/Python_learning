@@ -6,3 +6,8 @@
 5. pandas
 3. statsmodels
 4. sklearn(scikit-learn)
+
+# 启动jupyter:python的交互式notebook环境  
+<code>ipython notebook</code>   
+
+用浏览器访问http://localhost:8888
