@@ -1,5 +1,6 @@
-https://www.eclipse.org/egit/download/
-####　Installing the Latest Release: 4.9.0.201710071750-r
+https://www.eclipse.org/egit/download/   
+
+Installing the Latest Release: 4.9.0.201710071750-r
 To install via one of the update site URLs listed below, copy and paste it into the “Help > Install new software” dialog.
 
 EGit can be installed in the following ways:
