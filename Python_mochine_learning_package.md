@@ -3,7 +3,7 @@
 2. scipy
 3. tkinker
 4. matplotlib
-5. pandas
+5. pandas: require Cython(pip), gcc-c++(yum)
 3. statsmodels
 4. sklearn(scikit-learn)
 
