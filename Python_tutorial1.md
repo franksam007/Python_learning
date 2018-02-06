@@ -1,3 +1,5 @@
+可直接访问【http://www.pythondoc.com/pythontutorial27/index.html 】，此文档为中文版，所以本文档不再自行翻译。
+
 ## 1. 使用解释器
   将python放入执行路径中，直接在命令行中运行：
   - 直接执行：<code>python</code>
