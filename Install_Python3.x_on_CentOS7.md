@@ -32,6 +32,18 @@ CentOS的默认环境使用Python 2.7.5，须系统新版本。
 
 `python -m venv my_project_venv`
 
+CentOS7上如果报错:
+```
+Error: Command '['/home/superset/incubator-superset/venv/bin/python', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.
+```
+
+可以采用以下方法绕过去。
+```
+python -m venv foo --without-pip
+source foo/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py | python
+```
+
 4. 启动虚拟环境
 
 `source my_project_venv/bin/activate`
