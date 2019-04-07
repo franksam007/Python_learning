@@ -42,7 +42,7 @@ update-alternatives: using /usr/bin/python3.4 to provide /usr/bin/python (python
 ```	
 # python --version
 Python 3.6.7
-
+```
 接下来，再次列出可用的 Python 替代版本。
 ```
 # update-alternatives --list python
