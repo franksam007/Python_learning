@@ -30,11 +30,11 @@ Python 3.6.7
 update-alternatives: error: no alternatives for python
 ```
 
-如果出现以上所示的错误信息，则表示 Python 的替代版本尚未被 update-alternatives 命令识别。想解决这个问题，需要更新一下替代列表，将 python2.7 和 python3.6 放入其中。
+如果出现以上所示的错误信息，则表示 Python 的替代版本尚未被 update-alternatives （类似RH系的alernative命令）命令识别。想解决这个问题，需要更新一下替代列表，将 python2.7 和 python3.6 放入其中。
 ```	
 # update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 update-alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
-# update-alternatives --install /usr/bin/python python /usr/bin/python3.4 2
+# update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 update-alternatives: using /usr/bin/python3.4 to provide /usr/bin/python (python) in auto mode
 ```
 
@@ -47,7 +47,7 @@ Python 3.6.7
 ```
 # update-alternatives --list python
 /usr/bin/python2.7
-/usr/bin/python3.4
+/usr/bin/python3.6
 ```
 
 现在开始，可以使用下方的命令随时在列出的 Python 替代版本中任意切换了。
