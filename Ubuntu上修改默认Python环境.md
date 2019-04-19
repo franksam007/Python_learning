@@ -55,3 +55,23 @@ Python 3.6.7
 # update-alternatives --config python
 ```
 
+## 3. 使用不同版本对应的pip
+
+* 2.x版本
+  `python2 -m pip install <pkg>`
+  
+* 3.x版本
+  `python2 -m pip install <pkg>`
+
+## 4. 在代码中指定版本
+* 2.x版本
+  ```
+  #! python2
+  # coding: utf-8
+  ```
+
+* 3.x版本
+  ```
+  #! python3
+  # coding: utf-8
+  ```
