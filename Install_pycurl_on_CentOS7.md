@@ -1,5 +1,7 @@
 操作系统：CentOS 7 64位
+
 Python版本：3.6.3
+
 安装pyspider的时候报错：
 ```
  
