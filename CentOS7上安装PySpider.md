@@ -2,6 +2,16 @@
 ### 创建虚拟环境
 
 ```
+# 全面更新系统
+sudo yum update -y
+
+# CentOS默认没有安装pip
+sudo python get-pip.py
+
+# 安装虚拟环境支持软件
+pip install virtualenv
+
+# 创建虚拟环
 mkdir pyspider 
 cd pyspider/
 virtualenv env
