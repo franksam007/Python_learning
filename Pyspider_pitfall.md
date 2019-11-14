@@ -111,15 +111,20 @@ python导入pycurl模块正常截图
 ### 另外方法
 在安装 pyspider 的时候遇到了这个问题， pyspider 依赖 pycurl 这个库，而 pycurl 要求系统中存在相对应的库。(如果系统自动安装我们要先卸载)
 ```
-pip remove pycurl
+pip3 uninstall pycurl
 
-`yum install libcurl-devel` 
+# 以下两句可以解决问题
+sudo yum install libcurl-devel
+sudo yum install libxml2-devel libxslt-devel python-devel
 
-export PYCURL_SSL_LIBRARY=openssl >> ~/.bashrc
+
+export PYCURL_SSL_LIBRARY=nss >> ~/.bashrc
 
 source ~/.bashrc
 
-pip3 install pycurl
+pip3 install pycurl --global-option="--with-nss" --no-cache-dir
+
+# 注意如果报错时，显示link time为openssl，则需要将环境变量和安装变量的nss换为openssl(ssl)
 ```
 
 ## 2. PySpider启动时报错
