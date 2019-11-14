@@ -25,7 +25,7 @@ Python版本：3.6.3
 看日志可以发现是安装pyspider的时候依赖于pycurl,于是程序就先安装pycurl了，版本是7.43.0.1，在安装pycurl的时候发现找不到"curl-config"这个文件，网上查下发现是因为CentOS自带的curl版本过低，
 ok升级一下curl版本，这里选取与pycurl相同的版本，后来发现版本就算不同也是可以的
 
-### 升级安装curl
+### 升级安装curl（注意：此方法导致系统的yum出错，因为yum依赖python2.7的pycurl调用libcurl，会造成版本不一致）
 #### 第一步：下载curl
 ```
 wget https://curl.haxx.se/download/curl-7.43.0.tar.gz
@@ -108,9 +108,19 @@ ln -s /usr/local/lib/libcurl.so.4.3.0 /usr/lib64/libcurl.so.4
 再次导入pycurl模块就正常了
 python导入pycurl模块正常截图
 
-至此问题解决。
+### 另外方法
+在安装 pyspider 的时候遇到了这个问题， pyspider 依赖 pycurl 这个库，而 pycurl 要求系统中存在相对应的库。(如果系统自动安装我们要先卸载)
+```
+pip remove pycurl
 
+`yum install libcurl-devel` 
 
+export PYCURL_SSL_LIBRARY=openssl >> ~/.bashrc
+
+source ~/.bashrc
+
+pip3 install pycurl
+```
 
 ## 2. PySpider启动时报错
 ```
