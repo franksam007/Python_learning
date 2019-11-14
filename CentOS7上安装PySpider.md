@@ -29,6 +29,8 @@ sudo yum install libxml2-devel libxslt-devel python-devel
 export PYCURL_SSL_LIBRARY=nss 
 pip uninstall pycurl
 pip install pycurl --no-cache-dir
+#或者
+pip install pycurl --global-option="--with-nss" --no-cache-dir
 ```
 
 ### 安装pyspider
