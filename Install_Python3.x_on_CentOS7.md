@@ -63,6 +63,8 @@ curl https://bootstrap.pypa.io/get-pip.py | python
 ```
 # cd /etc/yum.repo.d/
 # curl -o epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo
+#### yum-config-manager --enable repoID（使用yum repolist all来查看）
+# yum clean all
 # yum install -y python36 python36-setuptools
 ```
 
