@@ -74,7 +74,7 @@ curl https://bootstrap.pypa.io/get-pip.py | python
 # alternatives --install /usr/bin/python python /usr/bin/python3.6 2
 # mv /usr/bin/pip /usr/bin/pip.bak    //原有的pip不是软连接，先把它干掉
 # alternatives --install /usr/bin/pip pip /usr/bin/pip2.7 1
-# alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.6 2
+# alternatives --install /usr/bin/pip pip /usr/bin/pip3.6 2
 ```
 检查一下设置是否生效
 ```
@@ -107,7 +107,7 @@ Enter to keep the current selection[+], or type selection number:
 ```
 # yum
   File "/usr/bin/yum", line 30
-    except KeyboardInterrupt, e:
+    except KeyboardInterrupt, e:22
                             ^
 SyntaxError: invalid syntax
 ```
@@ -128,7 +128,7 @@ SyntaxError: invalid syntax
 ``` 
 首行改为
 ```
-#!/usr/bin/python2.7 -Es
+#!/usr/bin/python2.7 -Esp
 ```
 ### 6.补充说明
 貌似CentOS7里面使用yum install python36后内置的就有pip,但是调用的时候不能直接pip install xxx这种写法,得这样写:
