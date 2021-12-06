@@ -3,6 +3,8 @@
 
 # 2. 利用get-pip.py安装
 * 下载get-pip.py
+  * 对于Python 3：https://bootstrap.pypa.io/get-pip.py
+  * 对于Python 2：https://bootstrap.pypa.io/pip/2.7/get-pip.py
 * 利用python执行get-pip.py
 `python3 get-pip.py`
 
